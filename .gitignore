@@ -1,0 +1,6 @@
+./vscode
+./include/SFML
+./lib
+./src/*
+!./src/main.cpp
+!./src/dp.cpp
