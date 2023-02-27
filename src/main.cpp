@@ -3,10 +3,10 @@
 using namespace std;
 
 int main() {
-    sf::RenderWindow win(sf::VideoMode(width, height), "SFML WERKS");
+    sf::RenderWindow win(sf::VideoMode(width, height), "Double Pendulum");
     sf::Event ev;
     Pend pnd(Pendul(cl1, cm1, ca1), Pendul(cl2, cm2, ca2));
-    win.setFramerateLimit(60);
+    win.setFramerateLimit(100);
     while(win.isOpen()) {
         while(win.pollEvent(ev)) {
             if(ev.type == sf::Event::Closed) win.close();

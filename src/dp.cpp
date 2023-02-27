@@ -54,9 +54,9 @@ void Pend::render() {
     vb.update(va);
     textr.clear(sf::Color::Black);
     if(show) textr.draw(vb);
+    textr.draw(trail);
     textr.draw(pends[0]);
     textr.draw(pends[1]);
-    textr.draw(trail);
     if(log) {
         sf::Text txt;
         std::stringstream ss;
