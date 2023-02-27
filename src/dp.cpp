@@ -64,7 +64,7 @@ void Pend::render() {
         txt.setFillColor(sf::Color::White);
         txt.setCharacterSize(20);
         txt.setPosition(upper, upper);
-        ss << "Angle 1: " << p1.angle << "\nAngle 2: " << p2.angle << "\nVel 1: " << p1.vel << "\nVel 2: " << p2.vel << "\nAcc 1: " << p1.acc << "\nAcc 2: " << p2.acc << "\n";
+        ss << "Angle 1: " << p1.angle*180/PI << "\nAngle 2: " << p2.angle*180/PI << "\nVel 1: " << p1.vel << "\nVel 2: " << p2.vel << "\nAcc 1: " << p1.acc << "\nAcc 2: " << p2.acc << "\n";
         txt.setString(ss.str());
         textr.draw(txt);
     }
